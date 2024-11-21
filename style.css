@@ -180,6 +180,24 @@ table.inventory th {
     text-align: center;
 }
 
+/*Columns*/
+
+.column-wide {
+  width: 50%;
+}
+
+.column-medium {
+  width: 30%;
+}
+
+.column-narrow {
+  width: 20%;
+}
+
+.column-extra-narrow {
+  width: 10%;
+}
+
 table.inventory td {
     text-align: right;
 }
