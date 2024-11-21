@@ -183,7 +183,7 @@ table.inventory th {
 /*Columns*/
 
 .column-wide {
-  width: 50%;
+  width: 60%;
 }
 
 .column-medium {
@@ -191,7 +191,7 @@ table.inventory th {
 }
 
 .column-narrow {
-  width: 20%;
+  width: 15%;
 }
 
 .column-extra-narrow {
