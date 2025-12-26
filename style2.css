@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.invoice-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.invoice-number {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.invoice-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.invoice-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+
+.bill-to {
+    flex: 1;
+}
+
+.bill-to-label {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.bill-to-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.terms-section {
+    flex: 1;
+    text-align: left;
+}
+
+.terms-row {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.company-info {
+    margin-bottom: 30px;
+}
+
+.company-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 3px;
+}
+
+.company-details {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.total-banner {
+    background-color: #f8f8f8;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+.total-banner-text {
+    font-size: 14px;
+    color: #666;
+    display: inline;
+    margin-right: 10px;
+}
+
+.total-banner-amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    display: inline;
+}
+
+.subject-section {
+    margin-bottom: 25px;
+}
+
+.subject-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.subject-text {
+    font-size: 13px;
+    color: #666;
+}
+
+.items-table {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.items-table thead {
+    background-color: #f8f8f8;
+}
+
+.items-table th {
+    padding: 12px 10px;
+    text-align: left;
+    font-weight: 600;
+    color: #666;
+    font-size: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.items-table th:first-child {
+    width: 40px;
+}
+
+.items-table th:nth-child(3),
+.items-table th:nth-child(4),
+.items-table th:nth-child(5) {
+    text-align: right;
+}
+
+.items-table tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.items-table td {
+    padding: 12px 10px;
+    color: #333;
+}
+
+.items-table td:nth-child(3),
+.items-table td:nth-child(4),
+.items-table td:nth-child(5) {
+    text-align: right;
+}
+
+.totals-section {
+    margin-top: 0;
+}
+
+.totals-section tr {
+    border: none;
+}
+
+.totals-section td {
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+.totals-section .total-label {
+    text-align: right;
+    color: #666;
+    font-weight: normal;
+}
+
+.totals-section .total-amount {
+    text-align: right;
+    color: #333;
+}
+
+.totals-section .grand-total-row td {
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+    padding-top: 12px;
+}
+
+.totals-section .balance-due-row td {
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+    padding-top: 8px;
+}
+
+.notes-section {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.notes-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.notes-text {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.powered-by {
+    font-size: 11px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media print {
+    body {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .terms-section {
+        text-align: left;
+    }
+}
